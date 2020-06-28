@@ -26,7 +26,7 @@ namespace TMCDatabase.Tools
             }
             catch (Exception ex)
             {
-                throw new Exception("Please add an App.Config file to the project, rename it to Private.Config and add your connectionstring. Private.config is in .GITIGNORE\n\n" + ex.Message);
+                throw new Exception("Please add an App.Config file to the projects (TMCDatabase and TMCDatabaseTest), rename it to Private.Config and add your connectionstring. Private.config is in .GITIGNORE\n\n" + ex.Message);
             }
         }
     }
