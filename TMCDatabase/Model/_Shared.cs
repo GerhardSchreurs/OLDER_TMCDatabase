@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DBTryout.Model
+namespace TMCDatabase.Model
 {
     public enum TrackerType
     {

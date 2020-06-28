@@ -1,10 +1,12 @@
-﻿using DBTryout.Model;
+﻿using TMCDatabase.Model;
+using TMCDatabase.Tools;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TMCDatabase.Tools;
 
-namespace DBTryout
+namespace TMCDatabase
 {
     public class DatabaseContext : DbContext
     {
@@ -17,7 +19,8 @@ namespace DBTryout
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("todo");
+            var config = new Configurator("Private.config");
+            optionsBuilder.UseMySQL(config.ConnectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

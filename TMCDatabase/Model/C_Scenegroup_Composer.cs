@@ -4,7 +4,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace DBTryout.Model
+namespace TMCDatabase.Model
 {
     public class C_Scenegroup_Composer
     {

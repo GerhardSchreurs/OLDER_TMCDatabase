@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace DBTryout.Extensions
+namespace TMCDatabase.Extensions
 {
     public static class DbContextExtensions
     {

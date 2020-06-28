@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Policy;
 using System.Text;
 
-namespace DBTryout.Model
+namespace TMCDatabase.Model
 {
     public class Composer
     {
